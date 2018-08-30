@@ -9,12 +9,13 @@ puts ""
 input_user = gets.chomp
 input_folder = Dir["#{input_user}/**"]
 puts ""
-puts "Ok, we search through: #{input_user}"
+puts "Ok, we searched through: #{input_user}"
 puts ""
 input_folder.each do |item|
     if Dir["#{item}/*.*"] != []
       puts item
-      puts "number of files found: " + Dir["#{item}/*.*"].count.to_s
+      puts "Number of files found: " + Dir["#{item}/*.*"].count.to_s
+      puts "Name of file(s):"
       puts Dir["#{item}/*.*"]
       puts ""
     end
