@@ -6,14 +6,16 @@ puts ""
 puts "Which folder should be looked through?"
 puts "Please follow this structure 'drive:/path/folder'"
 puts ""
-input_folder = Dir["#{gets.chomp}/**"]
+input_user = gets.chomp
+input_folder = Dir["#{input_user}/**"]
 puts ""
-puts "Ok we search through #{input_folder}"
+puts "Ok, we search through: #{input_user}"
 puts ""
 input_folder.each do |item|
     if Dir["#{item}/*.*"] != []
       puts item
-      puts "number of files found:" + Dir["#{item}/*.*"].count.to_s
+      puts "number of files found: " + Dir["#{item}/*.*"].count.to_s
+      puts Dir["#{item}/*.*"]
       puts ""
     end
 end
