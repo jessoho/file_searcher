@@ -23,3 +23,5 @@ input_folder.each do |item|
     end
 end
 puts "Number of folders with files found: " + folder_count.to_s
+gets
+puts "Exit by pressing enter"
