@@ -1,7 +1,7 @@
 
 puts ""
 puts "Hi there! I will help you to search through a folder of your choice.
-I will show you, which folders contain files and which ones are empty."
+I will show you, which folders contain files. I won't bore you with folders that are empty."
 puts ""
 puts "Which folder should be looked through?"
 puts "Please follow this structure 'drive:/path/folder'"
