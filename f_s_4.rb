@@ -8,7 +8,7 @@ puts "Please follow this structure 'drive:/path/folder'"
 puts ""
 folder_count = 0
 input_user = gets.chomp
-input_folder = Dir["#{input_user}/**/*"]
+input_folder = Dir["#{input_user.gsub('\\','/')}/**/*"]
 puts ""
 puts "Ok, we searched through: #{input_user}"
 puts ""
